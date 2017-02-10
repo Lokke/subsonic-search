@@ -42,7 +42,16 @@ limitations under the License.
   Supported Browsers
     * Firefox after and including 41.0.1 
 
-
+2017-02-01
+  Version 1.2
+  Tech Improvements
+    * Including CryptoJS v3.1.2 MD5 implementation to avoid XSS browser issues.
+	  Copyright and license see below.
+  Supported Browsers
+    * Mozilla Firefox after and including 41.0.1
+	* Microsoft Edge 38.14393.0.0
+  
+	
 = Ideas for future releases =
  * Improved Content Browsing
  * Move to search2 or search3. These are lacking the paging information in the 
@@ -185,7 +194,7 @@ var p_password = "";
 // INITIALIZATION //
 
 // Client identifier
-var p_Client     = "subsonic-browser-1.1";
+var p_Client     = "subsonic-browser-1.2";
 // REST Search Method
 var r_search     = "/search.view";
 
@@ -356,9 +365,11 @@ code.google.com/p/crypto-js
 (c) 2009-2013 by Jeff Mott. All rights reserved.
 code.google.com/p/crypto-js/wiki/License
 
-
 Code actually taken from here:
-https://github.com/sytelus/CryptoJS/blob/master/rollups/md5.js (revision 7fbfbbe on 30 Nov 2013)
+https://github.com/sytelus/CryptoJS/blob/master/rollups/md5.js 
+(revision 7fbfbbe on 30 Nov 2013)
+
+Copyright, see: https://github.com/sytelus/CryptoJS/blob/master/copyright.txt
 
 Because
  * code.google.com does not provide source anymore.
